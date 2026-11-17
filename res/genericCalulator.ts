@@ -1,5 +1,5 @@
-import Vector2 from "./vector2";
-import { TrackingVector } from "./types";
+import Vector2 from "./vector2.js";
+import { TrackingVector } from "./types.js";
 
 export default interface GenericCalculator<T> {
     zero: T;

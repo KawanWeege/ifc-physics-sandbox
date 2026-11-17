@@ -1,8 +1,8 @@
 console.log("Loading cartesianPlane");
 
-import { CartesianPlaneStyle, Renderable } from '../types';
-import Vector2 from '../vector2';
-import { CanvasRenderer } from './canvasRenderer';
+import { CartesianPlaneStyle, Renderable } from '../types.js';
+import Vector2 from '../vector2.js';
+import { CanvasRenderer } from './canvasRenderer.js';
 
 export class CartesianPlane implements Renderable {
     public static readonly ENVIRONMENT_STYLE: CartesianPlaneStyle = {

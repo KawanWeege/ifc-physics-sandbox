@@ -1,8 +1,8 @@
 console.log("Loading fpsCounter");
 
-import { CanvasRenderer } from "../canvasRenderer";
-import Vector2 from "../../vector2";
-import { DebugUIItem } from "./debugUIItem";
+import { CanvasRenderer } from "../canvasRenderer.js";
+import Vector2 from "../../vector2.js";
+import { DebugUIItem } from "./debugUIItem.js";
 
 export class FPSCounter extends DebugUIItem {
     private lastFrameTimestamp: number;

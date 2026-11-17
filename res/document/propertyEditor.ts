@@ -1,9 +1,9 @@
 console.log("Loading propertyEditor");
 
-import { PhysicsObject } from "../physicsObjects";
-import { ButtonColor, PropertyEditorOption, Selectable, PropertyEditorFormTarget, PropertyEditorInputListRow } from "../types";
-import Vector2 from "../vector2";
-import { Button } from "./buttons";
+import { PhysicsObject } from "../physicsObjects.js";
+import { ButtonColor, PropertyEditorOption, Selectable, PropertyEditorFormTarget, PropertyEditorInputListRow } from "../types.js";
+import Vector2 from "../vector2.js";
+import { Button } from "./buttons.js";
 
 export class PropertyEditor {
     private rows: PropertyEditorOption[];

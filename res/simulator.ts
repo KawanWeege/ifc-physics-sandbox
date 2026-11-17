@@ -1,8 +1,8 @@
 console.log("Loading simulator");
 
-import { Button } from './document/buttons';
-import { ObjectCreationController, ObjectSelectionController } from './document/documentUtilities';
-import { Simulatable } from './types';
+import { Button } from './document/buttons.js';
+import { ObjectCreationController, ObjectSelectionController } from './document/documentUtilities.js';
+import { Simulatable } from './types.js';
 
 export default class Simulator {
     private _time: number;

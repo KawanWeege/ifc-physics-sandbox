@@ -1,6 +1,6 @@
 console.log("Loaded modal");
 
-import documentElements from "./documentElements";
+import documentElements from "./documentElements.js";
 
 /*
     Class Definitions

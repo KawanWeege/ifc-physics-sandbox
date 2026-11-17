@@ -1,13 +1,13 @@
 console.log("Loading physicsProperties");
 
-import { PropertyEditorInputList, Vector2InputListRow, NumberInputListRow, ButtonInputListRow } from './document/propertyEditor';
-import { PhysicsPropertyJSON } from './fileController';
-import GenericCalculator, { NumberCalculator, Vector2Calculator, TrackingVectorCalculator } from './genericCalulator';
-import { PhysicsObject } from './physicsObjects';
-import { CanvasRenderer } from './rendering/canvasRenderer';
-import { Simulatable, PhysicsPropertyName, TrackingVector, VectorStyle, ButtonColor, Renderable } from './types';
-import Vector2 from './vector2';
-import * as Buttons from './document/buttons';
+import { PropertyEditorInputList, Vector2InputListRow, NumberInputListRow, ButtonInputListRow } from './document/propertyEditor.js';
+import { PhysicsPropertyJSON } from './fileController.js';
+import GenericCalculator, { NumberCalculator, Vector2Calculator, TrackingVectorCalculator } from './genericCalulator.js';
+import { PhysicsObject } from './physicsObjects.js';
+import { CanvasRenderer } from './rendering/canvasRenderer.js';
+import { Simulatable, PhysicsPropertyName, TrackingVector, VectorStyle, ButtonColor, Renderable } from './types.js';
+import Vector2 from './vector2.js';
+import * as Buttons from './document/buttons.js';
 
 export default abstract class PhysicsProperty<T> implements Simulatable {
     public active: boolean;

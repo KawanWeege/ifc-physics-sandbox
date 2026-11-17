@@ -1,17 +1,17 @@
 console.log("Loading graph...");
 
-import * as Buttons from "../document/buttons";
-import * as Document from "../document/documentUtilities";
-import * as Modal from "../document/modals";
-import * as Main from "../main";
-import { PhysicsObject } from "../physicsObjects";
-import PhysicsProperty from "../physicsProperties";
-import Simulator from "../simulator";
-import { PhysicsPropertyName, Renderable, Simulatable, ValueGetter, Followable } from "../types";
-import Vector2 from "../vector2";
-import { CanvasRenderer } from "./canvasRenderer";
-import documentElements from "../document/documentElements";
-import { DrawingTools } from "./drawingTools";
+import * as Buttons from "../document/buttons.js";
+import * as Document from "../document/documentUtilities.js";
+import * as Modal from "../document/modals.js";
+import * as Main from "../main.js";
+import { PhysicsObject } from "../physicsObjects.js";
+import PhysicsProperty from "../physicsProperties.js";
+import Simulator from "../simulator.js";
+import { PhysicsPropertyName, Renderable, Simulatable, ValueGetter, Followable } from "../types.js";
+import Vector2 from "../vector2.js";
+import { CanvasRenderer } from "./canvasRenderer.js";
+import documentElements from "../document/documentElements.js";
+import { DrawingTools } from "./drawingTools.js";
 
 /*
     Class definitions
@@ -76,7 +76,7 @@ class SimulatorValueGetter implements ValueGetter {
 
     constructor(public name: string, private readonly getValueCallback: number) {
         this.simulator = null;
-        import("../main").then(
+        import("../main.js").then(
             (element) => { this.simulator = element.simulator; }
         ).catch(
             () => { throw "Could not import simulator"; }
@@ -336,14 +336,14 @@ Buttons.getButtonById("create-graph-button")!.onClick = () => {
 
     Document.GraphPanel.setElementVisible(true, `Gráfico ${vGY.name} x ${vGX.name}`);
 
-    import("../main").then(
+    import("../main.js").then(
         main => {
             main.simulator.add(graph);
             main.simulator.start();
         }
     )
 
-    Document.GraphPanel.onClose = () => import("../main").then(main => main.simulator.remove(graph));
+    Document.GraphPanel.onClose = () => import("../main.js").then(main => main.simulator.remove(graph));
 
     Document.GraphPanel.renderGraph(graph);
 };

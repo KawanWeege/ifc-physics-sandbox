@@ -1,6 +1,6 @@
 console.log("Loaded buttons");
 
-import { ButtonConfig } from "../types";
+import { ButtonConfig } from "../types.js";
 
 const buttons: Button[] = [];
 

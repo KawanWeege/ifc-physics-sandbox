@@ -1,13 +1,13 @@
 console.log("Loaded buttonClickFunctions");
 
-import Ambient from "../ambient";
-import { downloadJSON, loadJSON } from "../fileController";
-import * as Main from "../main";
-import { PhysicsObject } from "../physicsObjects";
-import Vector2 from "../vector2";
-import * as Buttons from "./buttons";
-import { Alert, ObjectSelectionController, PropertyDescriptionUI } from "./documentUtilities";
-import * as Modals from "./modals";
+import Ambient from "../ambient.js";
+import { downloadJSON, loadJSON } from "../fileController.js";
+import * as Main from "../main.js";
+import { PhysicsObject } from "../physicsObjects.js";
+import Vector2 from "../vector2.js";
+import * as Buttons from "./buttons.js";
+import { Alert, ObjectSelectionController, PropertyDescriptionUI } from "./documentUtilities.js";
+import * as Modals from "./modals.js";
 
 /*
     Button onClick setter

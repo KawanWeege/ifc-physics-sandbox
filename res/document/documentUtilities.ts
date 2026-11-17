@@ -1,16 +1,16 @@
 console.log("Loading document");
 
-import { canvasRenderer, simulator } from "../main";
-import propertyDescriptions from '../propertyDescriptions';
-import { CanvasRenderer } from "../rendering/canvasRenderer";
-import { CartesianPlane } from "../rendering/cartesianPlane";
-import { Graph } from "../rendering/graph";
-import { PhysicsObjectType, Selectable } from '../types';
-import Vector2 from "../vector2";
-import * as Buttons from "./buttons";
-import documentElements from "./documentElements";
-import * as Modals from "./modals";
-import { PropertyEditor } from "./propertyEditor";
+import { canvasRenderer, simulator } from "../main.js";
+import propertyDescriptions from '../propertyDescriptions.js';
+import { CanvasRenderer } from "../rendering/canvasRenderer.js";
+import { CartesianPlane } from "../rendering/cartesianPlane.js";
+import { Graph } from "../rendering/graph.js";
+import { PhysicsObjectType, Selectable } from '../types.js';
+import Vector2 from "../vector2.js";
+import * as Buttons from "./buttons.js";
+import documentElements from "./documentElements.js";
+import * as Modals from "./modals.js";
+import { PropertyEditor } from "./propertyEditor.js";
 
 export abstract class PropertyDescriptionUI {
     private static readonly modal: Modals.Modal = Modals.getModalById("property-description-modal")!;

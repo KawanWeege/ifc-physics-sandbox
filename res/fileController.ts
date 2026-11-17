@@ -1,5 +1,5 @@
-import { PhysicsObjectType, PhysicsPropertyName } from "./types";
-import { Alert } from "./document/documentUtilities";
+import { PhysicsObjectType, PhysicsPropertyName } from "./types.js";
+import { Alert } from "./document/documentUtilities.js";
 
 export interface AmbientJSON {
     objects: PhysicsObjectJSON[];

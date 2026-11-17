@@ -1,6 +1,6 @@
-import { ArrowStyle, LineStyle, VectorStyle } from "../types";
-import Vector2 from "../vector2";
-import { Camera } from "./canvasRenderer";
+import { ArrowStyle, LineStyle, VectorStyle } from "../types.js";
+import Vector2 from "../vector2.js";
+import { Camera } from "./canvasRenderer.js";
 
 export class DrawingTools {
     public static readonly DEFAULT_LINE_STYLE: LineStyle = {

@@ -1,10 +1,10 @@
 console.log("Loading canvasRenderer");
 
-import * as Buttons from "../document/buttons";
-import { ObjectSelectionController } from "../document/documentUtilities";
-import { Followable, Renderable } from "../types";
-import Vector2 from "../vector2";
-import { DrawingTools } from "./drawingTools";
+import * as Buttons from "../document/buttons.js";
+import { ObjectSelectionController } from "../document/documentUtilities.js";
+import { Followable, Renderable } from "../types.js";
+import Vector2 from "../vector2.js";
+import { DrawingTools } from "./drawingTools.js";
 
 export class CanvasRenderer {
     public readonly camera: Camera;

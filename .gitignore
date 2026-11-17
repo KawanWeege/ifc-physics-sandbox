@@ -29,5 +29,4 @@ node_modules/
 .vscode/
 
 # Don't save compiled scripts
-www/assets/scripts/*
-!www/assets/scripts/require.js
+www/assets/scripts/

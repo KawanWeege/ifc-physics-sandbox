@@ -1,6 +1,6 @@
-import { DebugUIItem } from "./debugUIItem";
-import { CanvasRenderer, Camera } from "../canvasRenderer";
-import Vector2 from "../../vector2";
+import { DebugUIItem } from "./debugUIItem.js";
+import { CanvasRenderer, Camera } from "../canvasRenderer.js";
+import Vector2 from "../../vector2.js";
 
 export class MousePositionDisplayer extends DebugUIItem{
     private mouseMoved: ((ev: MouseEvent) => void) | null;

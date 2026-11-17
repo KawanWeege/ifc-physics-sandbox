@@ -1,13 +1,13 @@
 console.log("Loading main");
 
-import Ambient from './ambient';
-import * as Buttons from "./document/buttons";
-import { ObjectSelectionController, Alert } from './document/documentUtilities';
-import { CanvasRenderer } from './rendering/canvasRenderer';
-import { CartesianPlane } from './rendering/cartesianPlane';
-import Simulator from './simulator';
-import Vector2 from './vector2';
-import { DebugUI } from './rendering/debugui/debugUI';
+import Ambient from './ambient.js';
+import * as Buttons from "./document/buttons.js";
+import { ObjectSelectionController, Alert } from './document/documentUtilities.js';
+import { CanvasRenderer } from './rendering/canvasRenderer.js';
+import { CartesianPlane } from './rendering/cartesianPlane.js';
+import Simulator from './simulator.js';
+import Vector2 from './vector2.js';
+import { DebugUI } from './rendering/debugui/debugUI.js';
 
 let can = document.createElement('canvas');
 let ctx = can.getContext('2d');
@@ -17,8 +17,8 @@ export const canvasRenderer = new CanvasRenderer(ctx!, Vector2.zero, 100, 5, 500
 export let ambient = new Ambient();
 export const simulator = new Simulator(Buttons.getButtonById("play-button")!, Buttons.getButtonById("reset-button")!, Buttons.getButtonById("destroy-button")!, Buttons.getButtonById("step-button")!);
 
-import("./document/buttonClickFunctions");
-import("./rendering/graph");
+import("./document/buttonClickFunctions.js");
+import("./rendering/graph.js");
 
 export const setAmbient = function (a: Ambient) {
     canvasRenderer.remove(ambient);

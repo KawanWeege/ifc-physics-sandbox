@@ -1,14 +1,14 @@
 console.log("Loading physicsobjects");
 
-import Ambient from './ambient';
-import { PropertyEditorInputList } from './document/propertyEditor';
-import { PhysicsObjectJSON, PhysicsPropertyJSON } from './fileController';
-import PhysicsProperty, * as PhysicsProperties from './physicsProperties';
-import { CanvasRenderer } from './rendering/canvasRenderer';
-import { Sprite } from './rendering/sprite';
-import { Followable, PhysicsObjectConfig, PhysicsObjectType, PropertyEditorOption, Renderable, Selectable, Simulatable, PhysicsPropertyName } from './types';
-import Vector2 from './vector2';
-import { ObjectSelectionController } from './document/documentUtilities';
+import Ambient from './ambient.js';
+import { PropertyEditorInputList } from './document/propertyEditor.js';
+import { PhysicsObjectJSON, PhysicsPropertyJSON } from './fileController.js';
+import PhysicsProperty, * as PhysicsProperties from './physicsProperties.js';
+import { CanvasRenderer } from './rendering/canvasRenderer.js';
+import { Sprite } from './rendering/sprite.js';
+import { Followable, PhysicsObjectConfig, PhysicsObjectType, PropertyEditorOption, Renderable, Selectable, Simulatable, PhysicsPropertyName } from './types.js';
+import Vector2 from './vector2.js';
+import { ObjectSelectionController } from './document/documentUtilities.js';
 
 export class PhysicsObject implements Selectable, Simulatable, Renderable, Followable {
     static DEFAULT_NAME: string = "";

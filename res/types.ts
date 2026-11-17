@@ -1,9 +1,9 @@
 console.log("Loading types");
 
-import PhysicsProperty from './physicsProperties';
-import { CanvasRenderer } from './rendering/canvasRenderer';
-import Vector2 from './vector2';
-import Simulator from './simulator';
+import PhysicsProperty from './physicsProperties.js';
+import { CanvasRenderer } from './rendering/canvasRenderer.js';
+import Vector2 from './vector2.js';
+import Simulator from './simulator.js';
 
 /* Enums */
 

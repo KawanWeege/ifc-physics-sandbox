@@ -1,14 +1,14 @@
 console.log("Loading ambient");
 
-import { ObjectSelectionController } from './document/documentUtilities';
-import { ObjectLocatorPropertyEditorOption } from './document/propertyEditor';
-import { AmbientJSON, PhysicsObjectJSON } from './fileController';
-import { PhysicsObject } from './physicsObjects';
-import { ObjectPosition } from './physicsProperties';
-import { Camera, CanvasRenderer } from './rendering/canvasRenderer';
-import Simulator from './simulator';
-import { PropertyEditorOption, Renderable, Selectable, Simulatable } from './types';
-import Vector2 from './vector2';
+import { ObjectSelectionController } from './document/documentUtilities.js';
+import { ObjectLocatorPropertyEditorOption } from './document/propertyEditor.js';
+import { AmbientJSON, PhysicsObjectJSON } from './fileController.js';
+import { PhysicsObject } from './physicsObjects.js';
+import { ObjectPosition } from './physicsProperties.js';
+import { Camera, CanvasRenderer } from './rendering/canvasRenderer.js';
+import Simulator from './simulator.js';
+import { PropertyEditorOption, Renderable, Selectable, Simulatable } from './types.js';
+import Vector2 from './vector2.js';
 
 export default class Ambient implements Selectable, Renderable, Simulatable {
     public readonly objects: PhysicsObject[];

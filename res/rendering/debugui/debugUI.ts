@@ -1,9 +1,9 @@
-import { Renderable } from "../../types";
-import Vector2 from "../../vector2";
-import { FPSCounter } from "./fpsCounter";
-import { MousePositionDisplayer } from "./mousePosDisplayer";
-import { CanvasRenderer } from "../canvasRenderer";
-import { DebugUIItem } from "./debugUIItem";
+import { Renderable } from "../../types.js";
+import Vector2 from "../../vector2.js";
+import { FPSCounter } from "./fpsCounter.js";
+import { MousePositionDisplayer } from "./mousePosDisplayer.js";
+import { CanvasRenderer } from "../canvasRenderer.js";
+import { DebugUIItem } from "./debugUIItem.js";
 
 export class DebugUI implements Renderable{
     private debugUIItems: Map<string, DebugUIItem>;

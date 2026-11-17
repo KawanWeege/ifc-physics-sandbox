@@ -1,6 +1,6 @@
-import { Renderable } from "../../types";
-import Vector2 from "../../vector2";
-import { CanvasRenderer } from "../canvasRenderer";
+import { Renderable } from "../../types.js";
+import Vector2 from "../../vector2.js";
+import { CanvasRenderer } from "../canvasRenderer.js";
 
 export class DebugUIItem implements Renderable{
     public active: boolean;

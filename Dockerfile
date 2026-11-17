@@ -1,5 +1,5 @@
 # Build stage: compile TypeScript and prepare the Cordova browser platform
-FROM node:22-alpine AS build
+FROM node:26-alpine AS build
 WORKDIR /app
 
 COPY package.json package-lock.json ./
@@ -13,6 +13,6 @@ RUN npm run build \
     && npx cordova prepare browser
 
 # Runtime stage: serve the static site with nginx
-FROM nginx:1.27-alpine
+FROM nginx:1.30-alpine
 COPY --from=build /app/platforms/browser/www /usr/share/nginx/html
 EXPOSE 80
