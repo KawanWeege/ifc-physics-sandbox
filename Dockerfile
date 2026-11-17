@@ -10,7 +10,6 @@ COPY res ./res
 COPY www ./www
 
 RUN npm run build \
-    && npx cordova telemetry off \
     && npx cordova prepare browser
 
 # Runtime stage: serve the static site with nginx
